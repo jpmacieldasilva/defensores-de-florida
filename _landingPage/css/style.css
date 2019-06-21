@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+.container-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: linear-gradient(to bottom, rgba(50, 70, 90, 0.50), rgba(20, 40, 120, 0.75)), url(../imagenes/bg-image.jpg);
+    background-size: cover;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.contenido {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.logo {
+    width: 6em;
+    margin-bottom: 30px;
+}
+
+.llamada {
+    color: #fff;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    width: 80%;
+    max-width: 500px;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1.0em;
+}
+
+.buttons img {
+    width: 40%;
+    max-width: 200px;
+    padding: 0.5em;
+}
+
+.redes {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.redes ul {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.redes ul img {
+    width: 2.5em;
+}
+
+.imagen {
+    width: 70%;
+    max-width: 500px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.imagen-app {
+    width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    main {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .container-content {
+        flex-direction: row;
+    }
+
+    .contenido {
+        width: 50%;
+        align-items: normal;
+        padding: 10%;
+    }
+
+    .llamada {
+        color: #fff;
+        text-align: left;
+        line-height: 1.8em;
+        font-size: 1.5em;
+    }
+
+    .buttons {
+        justify-content: left;
+        margin: 1em;
+        width: 80%;
+    }
+
+    .imagen {
+        width: 50%;
+        max-width: 50%;
+        margin: 0 auto;
+        margin-top: 25%;
+    }
+
+    .imagen-app {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
