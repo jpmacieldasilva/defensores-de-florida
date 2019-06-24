@@ -184,6 +184,7 @@ button {
 .container-noticia a {
     width: 100%;
 }
+
 .noticia-destacada {
     width: 100%;
     height: 210px;
@@ -246,7 +247,7 @@ button {
     line-height: 1.5em;
 }
 
-.noticia-vistaprevia{
+.noticia-vistaprevia {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -325,14 +326,15 @@ button {
     text-decoration: none;
 }
 
-#tab1{
+#tab1 {
     border: none;
 }
 
 .tabs .tab a {
     color: #FFFFFF;
-        opacity: 0.75;
+    opacity: 0.75;
 }
+
 .content-deporte {
     position: absolute;
     width: 100%;
@@ -362,7 +364,7 @@ button {
 
 /* desportes contenido */
 
-.container-deporte{
+.container-deporte {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -375,9 +377,10 @@ button {
     width: 95%;
     margin: 0.25rem auto;
 }
-.deporte-card{
+
+.deporte-card {
     width: 100%;
-    height: 90px;
+    height: 25%;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -389,58 +392,59 @@ button {
     background-size: cover;
 }
 
-.deporte-card img{
+.deporte-card img {
     width: 1.8em;
     padding: 0.5em;
 }
 
-.deporte-card h2{
+.deporte-card h2 {
     padding: 0.4em 0;
     font-size: 1.3em;
 }
 
-.cd-fem-01{
+.cd-fem-01 {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0.70)), url(../imagenes/deportes/dep-fem-futsal.png);
 }
 
-.cd-fem-02{
+.cd-fem-02 {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1),
             rgba(0, 0, 0, 0.70)), url(../imagenes/deportes/dep-fem-volley.jpg);
 }
 
-.cd-fem-03{
+.cd-fem-03 {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0.70)), url(../imagenes/deportes/dep-fem-natacion.jpg);
 }
-.cd-fem-04{
+
+.cd-fem-04 {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0.70)), url(../imagenes/deportes/dep-fem-handball.jpg);
 }
 
-.cd-mas-01{
+.cd-mas-01 {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0.70)), url(../imagenes/deportes/dep-masc-futsal.png);
 }
 
-.cd-mas-02{
+.cd-mas-02 {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0.70)), url(../imagenes/deportes/dep-masc-volley.jpg);
 }
 
-.cd-mas-03{
+.cd-mas-03 {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0.70)), url(../imagenes/deportes/dep-masc-natacion.jpg);
 }
 
-.cd-mas-04{
+.cd-mas-04 {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0.70)), url(../imagenes/deportes/dep-masc-handball.jpg);
@@ -474,7 +478,7 @@ button {
     line-height: 1.5em;
 }
 
-.evento-vistaprevia{
+.evento-vistaprevia {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -520,7 +524,8 @@ button {
     align-content: center;
     align-items: center;
 }
-.previa-fecha img{
+
+.previa-fecha img {
     width: 1.2em;
 }
 
@@ -540,3 +545,73 @@ button {
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
 }
+
+/* Noticia  */
+.nav-noticia {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.50),
+            rgba(0, 0, 0, 0));
+    display: flex;
+    justify-content: space-between;
+}
+
+.noticia-volver {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1em;
+}
+
+.noticia-volver img,
+.nav-noticia>img {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.5em;
+}
+
+.noticia-header {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    color: white;
+}
+
+.noticia-fecha {
+    font-size: 15px;
+    padding: 0 1.6em;
+}
+
+.noticia-titulo {
+    font-size: 22px;
+    padding: 0.2em 1.2em 0.5em;
+    line-height: 28px;
+}
+
+.noticia-contenido {
+    padding: 1.2em;
+}
+
+.noticia-subtitulo {
+    font-weight: bold;
+    margin-bottom: 1em;
+    line-height: 1.3em;
+}
+
+.noticia-texto p {
+    margin-bottom: 1em;
+    line-height: 1.5em;
+}
+
+/* imagens de las noticias */
+.noticia-1{
+background-image: linear-gradient(to bottom,
+rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
+rgba(0, 0, 0, 0.70)), url(../imagenes/fotonoticia1.png);}
