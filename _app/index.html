@@ -1,259 +1,72 @@
 <!doctype html>
 <html lang="es">
+
 <head>
-    <title>UBA | FADU | DG / DIyS | DGPC | Cátedra Díaz Cortez | Gisele Ruiz, Marcelo Rabuini | Joao Paulo Maciel da
-        Silva , Maria Paz Cosentino, Romina Molina, Maxi Galván | Comitente | 1º cuat. 2019</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <title>UBA | FADU | DG / DIyS | DGPC | Cátedra Díaz Cortez | Gisele Ruiz, Marcelo Rabuini | Joao Paulo Maciel da
+    Silva , Maria Paz Cosentino, Romina Molina, Maxi Galván | Comitente | 1º cuat. 2019</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
-<body class="blanco">
-    <header class="oscuro">
-        <div class="hd-escudo"><img src="imagenes/icons/escudo.svg"></div>
-    </header>
-    <div class="header-menu text-blanco"><img src="imagenes/icons/menu.svg"></div>
-
-    <div class="nav-barra oscuro">
-        <button class="tablinks " id="defaultOpen" onclick="openTab(event, 'Noticias')"> <img class="nav-icons"
-                src="imagenes/icons/icon-noticias.svg">
-        </button>
-        <button class="tablinks " onclick="openTab(event, 'Deportes')"> <img class="nav-icons"
-                src="imagenes/icons/icon-deportes.svg"> </button>
-        <button class="tablinks " onclick="openTab(event, 'Comunidad')"> <img class="nav-icons"
-                src="imagenes/icons/icon-Comunidad.svg"> </button>
+<body>
+  <div class="css-slider-wrapper">
+    <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+    <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+    <input type="radio" name="slider" class="slide-radio3" id="slider_3">
+    <div class="slider-pagination">
+      <label for="slider_1" class="page1"></label>
+      <label for="slider_2" class="page2"></label>
+      <label for="slider_3" class="page3"></label>
     </div>
-
-    <div id="Noticias" class="tabcontent">
-        <div class="container-noticia">
-            <a href="noticias/noticiadestacada.html">
-                <div class="noticia-destacada sombra-2">
-                    <h2 class="titulo-destacado">Se sorteó el Nacional de Futsal de fútbol femenino</h2>
-                    <p class="parrafo-destacado">Universidad Maza quedó en el grupo A conjuntamente con Mariano Moreno,
-                        Liverpool
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="mas-noticias">
-            <hr>
-            <h3 class="titulo-noticias">Más notícias</h3>
-            <a href="noticias/noticia.html">
-                <div class="noticia-vistaprevia noticia1 sombra-1">
-
-                    <div class="foto-mini">
-                        <img src="imagenes/noticias/noticia-pruebadejugadoras.png" alt=""></div>
-                    <div class="texto-noti-mini">
-                        <p class="previa-hashtag text-rojo">#futsal #femenino</p>
-                        <p class="previa-titulo text-azul">Defensores de Florida y Villa la Ñata prueban jugadoras</p>
-                        <p class="previa-fecha text-oscuro">18/04/19 15h</p>
-                    </div>
-
-                </div>
-            </a>
-            <a href="noticias/noticia2.html">
-                <div class="noticia-vistaprevia sombra-1">
-                    <div class="foto-mini">
-                        <img src="imagenes/noticias/noticia-proyectofemenino.png" alt=""></div>
-                    <div class="texto-noti-mini">
-                        <p class="previa-hashtag text-rojo">#futsal #femenino</p>
-                        <p class="previa-titulo text-azul">Defensores de Florida y su proyecto de fútbol femenino
-                        </p>
-                        <p class="previa-fecha text-oscuro">20/03/19 12h</p>
-                    </div>
-
-                </div>
-            </a>
-            <a href="noticias/noticia3.html">
-                <div class="noticia-vistaprevia noticia3 sombra-1">
-
-                    <div class="foto-mini">
-                        <img src="imagenes/noticias/noticia-evina-entrevista.png" alt=""></div>
-                    <div class="texto-noti-mini">
-                        <p class="previa-hashtag text-rojo">#futsal #femenino</p>
-                        <p class="previa-titulo text-azul">Evelina Cabrera: "Cambiamos la vida a muchas mujeres"</p>
-                        <p class="previa-fecha text-oscuro">16/01/19 10h</p>
-                    </div>
-
-                </div>
-            </a>
-        </div>
+    <div class="next control">
+      <label for="slider_1" class="numb1"><i class="fa fa-arrow-circle-right"></i></label>
+      <label for="slider_2" class="numb2"><i class="fa fa-arrow-circle-right"></i></label>
+      <label for="slider_3" class="numb3"><i class="fa fa-arrow-circle-right"></i></label>
     </div>
-    <div id="Deportes" class="tabcontent">
-        <div class="tabs azul">
-            <div class="tab" id="tab1">
-                <a href="#tab1">Femenino</a>
-                <div class="content-deporte">
-                    <div class="container-deporte">
-                        <a href="">
-                            <div class="deporte-card cd-fem-01 sombra-2">
-                                <img src="imagenes/icons/icon-futsal.svg">
-                                <h2 class="titulo-destacado">Futsal</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="container-deporte">
-                        <a href="">
-                            <div class="deporte-card cd-fem-02 sombra-2">
-                                <img src="imagenes/icons/icon-volleyball.svg">
-                                <h2 class="titulo-destacado">Volleyball</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="container-deporte">
-                        <a href="">
-                            <div class="deporte-card cd-fem-03 sombra-2">
-                                <img src="imagenes/icons/icon-natacion.svg">
-                                <h2 class="titulo-destacado">Natacion</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="container-deporte">
-                        <a href="">
-                            <div class="deporte-card cd-fem-04 sombra-2">
-                                <img src="imagenes/icons/icon-futsal.svg">
-                                <h2 class="titulo-destacado">Handball</h2>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="tab" id="tab2">
-                <a href="#tab2">Masculino</a>
-                <div class="content-deporte">
-                    <div class="container-deporte">
-                        <a href="">
-                            <div class="deporte-card cd-mas-01 sombra-2">
-                                <img src="imagenes/icons/icon-futsal.svg">
-                                <h2 class="titulo-destacado">Futsal</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="container-deporte">
-                        <a href="">
-                            <div class="deporte-card cd-mas-02 sombra-2">
-                                <img src="imagenes/icons/icon-volleyball.svg">
-                                <h2 class="titulo-destacado">Volleyball</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="container-deporte">
-                        <a href="">
-                            <div class="deporte-card cd-mas-03 sombra-2">
-                                <img src="imagenes/icons/icon-natacion.svg">
-                                <h2 class="titulo-destacado">Natacion</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="container-deporte">
-                        <a href="">
-                            <div class="deporte-card cd-mas-04 sombra-2">
-                                <img src="imagenes/icons/icon-futsal.svg">
-                                <h2 class="titulo-destacado">Handball</h2>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="previous control">
+      <label for="slider_1" class="numb1"><i class="fa fa-arrow-circle-left"></i></label>
+      <label for="slider_2" class="numb2"><i class="fa fa-arrow-circle-left"></i></label>
+      <label for="slider_3" class="numb3"><i class="fa fa-arrow-circle-left"></i></label>
     </div>
-
-    <div id="Comunidad" class="tabcontent">
-        <div class="content-eventos">
-            <hr>
-            <h3 class="titulo-eventos">Eventos</h3>
-            <a class="card-evento" href="eventos/evento.html">
-                <div class="evento-vistaprevia sombra-1">
-                    <div class="foto-mini">
-                        <img src="imagenes/eventos/evento-torneodetruco.jpg" alt=""></div>
-                    <div class="texto-evento-mini">
-                        <p class="previa-hashtag text-rojo">16/05/19 15h30</p>
-                        <p class="previa-titulo text-azul">XXVI Torneo de Truco #Defensores</p>
-                        <span class="previa-fecha">
-                            <img src="imagenes/icons/icon-local.png"></img>
-                            <p class="text-oscuro">Club Defensores</p>
-                        </span>
-                        <span class="previa-fecha">
-                            <img src="imagenes/icons/icon-ticket.png"></img>
-                            <p class="text-oscuro">300 pesos</p>
-                        </span>
-                    </div>
-                </div>
-            </a>
-            <a class="card-evento" href="eventos/evento.html">
-                <div class="evento-vistaprevia sombra-1">
-                    <div class="foto-mini">
-                        <img src="imagenes/eventos/evento-torneodetruco.jpg" alt=""></div>
-                    <div class="texto-evento-mini">
-                        <p class="previa-hashtag text-rojo">16/05/19 15h30</p>
-                        <p class="previa-titulo text-azul">XXVI Torneo de Truco #Defensores</p>
-                        <span class="previa-fecha">
-                            <img src="imagenes/icons/icon-local.png"></img>
-                            <p class="text-oscuro">Club Defensores</p>
-                        </span>
-                        <span class="previa-fecha">
-                            <img src="imagenes/icons/icon-ticket.png"></img>
-                            <p class="text-oscuro">300 pesos</p>
-                        </span>
-                    </div>
-                </div>
-            </a>
-            <a class="card-evento" href="eventos/evento.html">
-                <div class="evento-vistaprevia sombra-1">
-                    <div class="foto-mini">
-                        <img src="imagenes/eventos/evento-torneodetruco.jpg" alt=""></div>
-                    <div class="texto-evento-mini">
-                        <p class="previa-hashtag text-rojo">16/05/19 15h30</p>
-                        <p class="previa-titulo text-azul">XXVI Torneo de Truco #Defensores</p>
-                        <span class="previa-fecha">
-                            <img src="imagenes/icons/icon-local.png"></img>
-                            <p class="text-oscuro">Club Defensores</p>
-                        </span>
-                        <span class="previa-fecha">
-                            <img src="imagenes/icons/icon-ticket.png"></img>
-                            <p class="text-oscuro">300 pesos</p>
-                        </span>
-                    </div>
-                </div>
-            </a>
-            <a class="card-evento" href="eventos/evento.html">
-                <div class="evento-vistaprevia sombra-1">
-                    <div class="foto-mini">
-                        <img src="imagenes/eventos/evento-torneodetruco.jpg" alt=""></div>
-                    <div class="texto-evento-mini">
-                        <p class="previa-hashtag text-rojo">16/05/19 15h30</p>
-                        <p class="previa-titulo text-azul">XXVI Torneo de Truco #Defensores</p>
-                        <span class="previa-fecha">
-                            <img src="imagenes/icons/icon-local.png"></img>
-                            <p class="text-oscuro">Club Defensores</p>
-                        </span>
-                        <span class="previa-fecha">
-                            <img src="imagenes/icons/icon-ticket.png"></img>
-                            <p class="text-oscuro">300 pesos</p>
-                        </span>
-                    </div>
-                </div>
-            </a>
-        </div>
+    <div class="slider slide1">
+      <div>
+        <p class="slider-hashtag text-rojo"> #DEFENSORES </p>
+        <h2 class="slider-titulo text-blanco">Un Club de la <br> <span>Comunidad</span></h2>
+        <p class="slider-texto text-blanco"> Desde Florida, con la garra y fuerza de un verdadero #defensor, gracias a
+          la
+          persistencia de sus socios que acompañan cada fin de semana a sus equipos. </p>
+      </div>
     </div>
+    <div class="slider slide2">
+      <div>
+        <p class="slider-hashtag text-rojo"> #DEFENSORES </p>
+        <h2 class="slider-titulo text-blanco">Un Club de los <br> <span>Deportistas</span></h2>
+        <p class="slider-texto text-blanco"> Desde Florida, con la garra y fuerza de un verdadero #defensor, gracias a
+          la
+          persistencia de sus socios que acompañan cada fin de semana a sus equipos. </p>
+      </div>
+    </div>
+    <div class="slider slide3">
+      <div>
+        <p class="slider-hashtag text-rojo"> #DEFENSORES </p>
+        <h2 class="slider-titulo text-blanco">Un Club de <br> <span>todos nosotros</span></h2>
+        <p class="slider-texto text-blanco"> Desde Florida, con la garra y fuerza de un verdadero #defensor, gracias a
+          la
+          persistencia de sus socios que acompañan cada fin de semana a sus equipos. </p>
 
-    <script>
-        document.getElementById("defaultOpen").click();
+        <div class="slider-action">
+          <button class="bt-accion oscuro"> <a class="text-blanco" href="home.html">Ya soy Sócio</a> </button>
+          <button class="bt-accion rojo"> <a class="text-blanco" href="home.html">Hacete Sócio</a> </button>
+          <a class="text-blanco" href="home.html"> Entrar como invitado</a> </button>
+        </div>
 
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace("ativo", "");
-            }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += "ativo";
-        }
-    </script>
-
+      </div>
+    </div>
+  </div>
 </body>
+
+</html>
