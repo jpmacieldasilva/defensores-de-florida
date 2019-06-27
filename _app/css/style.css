@@ -339,9 +339,8 @@ button {
 .content-deporte {
     position: absolute;
     width: 100%;
-    left: 0px;
+    left: 0;
     top: 60px;
-    height: 100vh;
     opacity: 0;
     background-color: #FFFFFF;
     -webkit-transition: opacity 0.3s ease-out;
@@ -351,7 +350,6 @@ button {
 }
 
 .tabs .tab:nth-of-type(1) .content-deporte {
-
     opacity: 1;
 }
 
@@ -366,7 +364,8 @@ button {
 /* desportes contenido */
 
 .container-deporte {
-    width: 100%;
+    width: 95%;
+    height: 25%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -698,4 +697,47 @@ rgba(0, 0, 0, 0.70)), url(../imagenes/fotonoticia1.png);} */
 .evento-action button a {
     color: #fff;
 
+}
+
+/* FORMULARIOS */
+
+
+
+.form-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom, rgba(30, 50, 60, 0.30), rgba(30, 50, 60, 1)), url(../imagenes/slider/sede-del-club.png);
+    background-size: cover;
+}
+
+.form-container img{
+    width: 100px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+form input{
+    width: 70%;
+    height: 50px;
+    padding: 0 1.5em;
+    margin: 0.4em 0;
+    border-radius: 30px;
+    border: 0;
+    font-size: 0.8em;
+}
+
+.submit{
+    font-size: 1em;
 }

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50.105" height="57.621" viewBox="0 0 50.105 57.621">
+  <g id="outline-room-24px" opacity="0.75">
+    <g id="Bounding_Boxes">
+      <path id="Caminho_2439" data-name="Caminho 2439" d="M0,0H50.105V57.621H0Z" fill="none"/>
+    </g>
+    <g id="Outline" transform="translate(8.246 4.802)">
+      <g id="Grupo_86" data-name="Grupo 86">
+        <path id="Caminho_2440" data-name="Caminho 2440" d="M21.806,2A16.794,16.794,0,0,0,5,18.806c0,12.6,16.806,31.211,16.806,31.211S38.612,31.411,38.612,18.806A16.794,16.794,0,0,0,21.806,2ZM9.8,18.806a12,12,0,0,1,24.009,0c0,6.915-6.915,17.262-12,23.721C16.812,36.116,9.8,25.649,9.8,18.806Z" transform="translate(-5 -2)" fill="#2f455c"/>
+        <ellipse id="Elipse_87" data-name="Elipse 87" cx="6.002" cy="6.002" rx="6.002" ry="6.002" transform="translate(10.804 10.804)" fill="#2f455c"/>
+      </g>
+    </g>
+  </g>
+</svg>
