@@ -7,6 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
@@ -14,7 +15,37 @@
     <header class="oscuro">
         <div class="hd-escudo"><img src="imagenes/icons/escudo.svg"></div>
     </header>
-    <div class="header-menu text-blanco"><img src="imagenes/icons/menu.svg"></div>
+
+    <div class="container" onclick="goActive()">
+        <div class="content">
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu" class="oscuro">
+                        <div class="content-menu">
+                            <img src="imagenes/icons/escudo.svg">
+                            <div class="content-personal">
+                                <img src="imagenes/icons/icon-qrcode.svg" alt="" class="personal-qr">
+                                <p class="personal-nombre">Romina Paz</p>
+                                <p class="personal-socio">Nro de Sócio: 293.942-01 </p>
+                                <p class="personal-dni">DNI: 38819283</p>
+                            </div>
+                            <ul class="menu-config">
+                                <li><a href="">Datos</a><img src="imagenes/icons/icon-forward.svg"></li>
+                                <li><a href="">Arranceles</a><img src="imagenes/icons/icon-forward.svg"></li>
+                                <li><a href="">Configuraciones</a><img src="imagenes/icons/icon-forward.svg"></li>
+                            </ul>
+                            <button class="rojo text-blanco">Cerrar Sesión</button>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- <div class="header-menu text-blanco"><img src="imagenes/icons/menu.svg"></div> -->
 
     <div class="nav-barra oscuro">
         <button class="tablinks " id="defaultOpen" onclick="openTab(event, 'Noticias')"> <img class="nav-icons"
@@ -104,7 +135,7 @@
                     <div class="deporte-card cd-fem-03 sombra-2">
                         <img src="imagenes/icons/icon-natacion.svg">
                         <h2 class="titulo-destacado">Natacion <br>Femenino</h2>
-                        
+
                     </div>
                 </a>
             </div>
@@ -228,7 +259,6 @@
             </a>
         </div>
     </div>
-
     <script>
         document.getElementById("defaultOpen").click();
 
@@ -246,5 +276,14 @@
             evt.currentTarget.className += "ativo";
         }
     </script>
+    <script>
+        var container = document.getElementsByClassName("container");
 
+        for (var i = 0; i < container.length; i++) {
+            //For each element in the container array, add an onclick event.
+            container[i].onclick = function (event) {
+                this.classList.toggle('activado');
+            }
+        }
+    </script>
 </body>
