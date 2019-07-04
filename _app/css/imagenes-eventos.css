@@ -1,2 +1,20 @@
-.evento-1{
-    background-image: url(../imagenes/eventos/evento-torneodetruco.jpg);}
+.evento-fest {
+    background-image: url(../imagenes/eventos/evento-justoporelnacional.jpg);
+    background-position: center;
+}
+
+.evento-truco {
+    background-image: url(../imagenes/eventos/evento-torneodetruco.jpg);
+    background-position: center;
+}
+
+.evento-sabado-distinto {
+    background-image: url(../imagenes/eventos/evento-sabado-distinto.jpg);
+    background-position: center;
+}
+
+.evento-prueba {
+    background-image: url(../imagenes/eventos/evento-pruebadejugadores.jpg);
+    background-position: center;
+}
+

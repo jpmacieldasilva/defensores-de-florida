@@ -6,14 +6,24 @@
     Silva , Maria Paz Cosentino, Romina Molina, Maxi Galván | Comitente | 1º cuat. 2019</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/loading.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="css-slider-wrapper">
+  <div class="loading">
+      <!-- <img src="imagenes/icons/escudo.svg">
+      <h1>#DEFENSORES</h1> -->
+    <div class="main-loader">
+      <span class="loader1"></span>
+      <span class="loader2"></span>
+      <span class="loader3"></span>
+    </div>
+  </div>
+  <div class="css-slider-wrapper" id="slider">
     <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
     <input type="radio" name="slider" class="slide-radio2" id="slider_2">
     <input type="radio" name="slider" class="slide-radio3" id="slider_3">
@@ -37,8 +47,7 @@
         <p class="slider-hashtag text-rojo"> #DEFENSORES </p>
         <h2 class="slider-titulo text-blanco">Un Club de la <br> <span>Comunidad</span></h2>
         <p class="slider-texto text-blanco"> Desde Florida, con la garra y fuerza de un verdadero #defensor, gracias a
-          la
-          persistencia de sus socios que acompañan cada fin de semana a sus equipos. </p>
+          la persistencia de sus socios que acompañan cada fin de semana a sus equipos. </p>
       </div>
     </div>
     <div class="slider slide2">
@@ -46,8 +55,7 @@
         <p class="slider-hashtag text-rojo"> #DEFENSORES </p>
         <h2 class="slider-titulo text-blanco">Un Club de los <br> <span>Deportistas</span></h2>
         <p class="slider-texto text-blanco"> Desde Florida, con la garra y fuerza de un verdadero #defensor, gracias a
-          la
-          persistencia de sus socios que acompañan cada fin de semana a sus equipos. </p>
+          la persistencia de sus socios que acompañan cada fin de semana a sus equipos. </p>
       </div>
     </div>
     <div class="slider slide3">
@@ -55,9 +63,7 @@
         <p class="slider-hashtag text-rojo"> #DEFENSORES </p>
         <h2 class="slider-titulo text-blanco">Un Club de <br> <span>todos nosotros</span></h2>
         <p class="slider-texto text-blanco"> Desde Florida, con la garra y fuerza de un verdadero #defensor, gracias a
-          la
-          persistencia de sus socios que acompañan cada fin de semana a sus equipos. </p>
-
+          la persistencia de sus socios que acompañan cada fin de semana a sus equipos. </p>
         <div class="slider-action">
           <button class="bt-accion oscuro"> <a class="text-blanco" href="login.html">Ya soy Sócio</a> </button>
           <button class="bt-accion rojo"> <a class="text-blanco" href="home.html">Hacete Sócio</a> </button>
@@ -67,6 +73,11 @@
       </div>
     </div>
   </div>
+  <script type = "text/javascript">   
+    setTimeout(function(){
+       document.getElementById("slider").style.opacity="1";
+    }, 3000);  
+    </script>
 </body>
 
 </html>

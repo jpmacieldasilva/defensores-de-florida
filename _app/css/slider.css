@@ -9,6 +9,7 @@
 /* Slider wrapper*/
 .css-slider-wrapper {
   display: block;
+  opacity: 0;
   background: #FFF;
   overflow: hidden;
   position: absolute;
@@ -16,6 +17,7 @@
   right: 0;
   top: 0;
   bottom: 0;
+  transition: all 1s;
 }
 
 /* Slider */
@@ -44,19 +46,20 @@
 .slide1 {
   left: 0;
   background-image: linear-gradient(to bottom, rgba(50, 70, 90, 0.60), rgba(20, 40, 120, 0.9)), url(../imagenes/slider/torcedores-del-club.jpg);
+  background-position:center;
 
 }
 
 .slide2 {
   left: 100%;
   background-image: linear-gradient(to bottom, rgba(50, 70, 90, 0.60), rgba(20, 40, 120, 0.9)), url(../imagenes/slider/deportes-del-club.jpg);
-
+  background-position:center;
 }
 
 .slide3 {
   left: 200%;
   background-image: linear-gradient(to bottom, rgba(50, 70, 90, 0.60), rgba(20, 40, 120, 0.9)), url(../imagenes/slider/sede-del-club.png);
-
+  background-position:center;
 }
 
 .slider div {

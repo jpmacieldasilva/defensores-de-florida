@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>UBA | FADU | DG / DIyS | DGPC | Cátedra Díaz Cortez | Gisele Ruiz, Marcelo Rabuini | Joao Paulo Maciel da
+        Silva , Maria Paz Cosentino, Romina Molina, Maxi Galván | Comitente | 1º cuat. 2019</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilo-resultados.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body class="blanco">
+    <header class="oscuro">
+        <div class="hd-escudo"><img src="imagenes/icons/escudo.svg"></div>
+    </header>
+    <div class="header-menu text-blanco"><img src="imagenes/icons/menu.svg"></div>
+
+    <div class="nav-barra oscuro">
+        <button class="tablinks " id="defaultOpen" onclick="openTab(event, 'Noticias')"> <img class="nav-icons"
+                src="imagenes/icons/icon-noticias.svg">
+        </button>
+        <button class="tablinks " onclick="openTab(event, 'Deportes')"> <img class="nav-icons"
+                src="imagenes/icons/icon-deportes.svg"> </button>
+        <button class="tablinks " onclick="openTab(event, 'Comunidad')"> <img class="nav-icons"
+                src="imagenes/icons/icon-Comunidad.svg"> </button>
+    </div>
+
+    <div class="container">
+        <div class="resultado-destacado">
+            <div class="club-izq">
+                <img src="imagenes/equipos/atletico%20stentor.png">
+                <h5 class="stentor">Club Atlético Stentor
+                </h5>
+            </div>
+            <div class="datos-centrales">
+                <h6> Torneo Clausura</h6>
+                <h5> 11/07/2019</h5>
+                <h1> 1-2</h1>
+                <h4> Club Florida</h4>
+            </div>
+            <div class="club-der">
+                <img class="escudo-defe" src="imagenes/equipos/defe%20florida.png">
+                <h5 class="defeflorida"> Defe. de Florida
+                </h5>
+            </div>
+        </div>
+        <div class="proximos-partidos">
+            <h3>Próximos Partidos</h3>
+        </div>
+        <hr size="2" width=80% />
+
+        <div class="partido-1">
+            <div class="equipo-izq">
+                <img src="imagenes/equipos/social lynch.png">
+                <h5>Social <br> Lych</h5>
+            </div>
+            <div class="proximos-resultados">
+                <h5>Torneo Clausura</h5>
+                <h4>14/07/2019</h4>
+                <h2>- - -</h2>
+                <h5>Club Social Lynch</h5>
+            </div>
+            <div class="equipo-der">
+                <h5>Defe. de <br> Florida</h5>
+                <img src="imagenes/equipos/defe florida.png">
+            </div>
+
+        </div>
+        <hr size="2" width=80% align="center" />
+    </div>
+    
+
+
+    <script>
+        document.getElementById("defaultOpen").click();
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace("ativo", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += "ativo";
+        }
+    </script>
+
+</body>
