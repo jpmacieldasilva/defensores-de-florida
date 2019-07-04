@@ -700,3 +700,50 @@ form input{
 .submit{
     font-size: 1em;
 }
+
+/* INFO CLUB */
+
+.info-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1F2F3C;
+    z-index: 99999999999;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.activeInfo{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.info-container img{
+    width: 100%;
+}
+
+.info-container h1 {
+    width: 80%;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.info-container p{
+    width: 80%;
+    color: #FFFFFF; 
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+.info-container button{
+    color: #FFFFFF; 
+    font-size: 0.8em;
+    line-height: 1.5em;
+}

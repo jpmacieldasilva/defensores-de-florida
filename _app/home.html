@@ -13,7 +13,7 @@
 
 <body class="blanco">
     <header class="oscuro">
-        <div class="hd-escudo"><img src="imagenes/icons/escudo.svg"></div>
+        <div class="hd-escudo" onclick="showInfo()"><img src="imagenes/icons/escudo.svg"></div>
     </header>
 
     <div class="container" onclick="goActive()">
@@ -259,6 +259,22 @@
             </a>
         </div>
     </div>
+    <div class="info-container" id="info">
+        <img src="imagenes/datos-club.jpg" alt="" class="info-image">
+        <h1>Club Social y Deportivo Defensores de Florida</h1>
+        <p>El Club Defensores de Florida es una escuela formativa de Futsal Femenino, Masculino, niños y adultos de
+            diferentes niveles. Dirigido por los profesores Victoria Marian, Ana Percia, Rodrigo "Loly" Quintana y
+            Fernando Tournour. <br>
+            Através de la webapp se busca promocionar de forma integral el club, mejorar la comunicación con los socios
+            actuales y futuros a la vez que se fomenta el desarrollo de actividades deportivas, recreativas y de
+            inclusión social.</p>
+        <p>Fundación: Fundado el 8 de Febrero de 1934.</p>
+        <p>Ubicación: Francisco Narciso de Laprida 2064 B1602EFN Vicente López, Buenos Aires.</p>
+        <p>Telefono: (011) 4795 2821</p>
+        <p>Días y horarios: Lun-Viernes | 17h30 a 23h
+        </p>
+        <button class="rojo" onclick="showInfo()">Volver</button>
+    </div>
     <script>
         document.getElementById("defaultOpen").click();
 
@@ -284,6 +300,17 @@
             container[i].onclick = function (event) {
                 this.classList.toggle('activado');
             }
+        }
+    </script>
+    <script>
+        function showInfo() {
+            var info = document.getElementById("info");
+            // if (info.style.opacity === "0") {
+            //     info.style.opacity = "1";
+            // } else {
+            //     info.style.opacity = "0";
+            // }
+            info.classList.toggle("activeInfo");
         }
     </script>
 </body>
