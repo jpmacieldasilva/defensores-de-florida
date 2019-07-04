@@ -196,13 +196,13 @@ button {
             rgba(0, 0, 0, 0.50)), url(../imagenes/noticias/destacada-sorteonacional.jpg);
     border-radius: 10px;
     background-size: cover;
-    background-position:center;
+    background-position: center;
 
 }
 
 .noticia-destacada>h2 {
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.4em;
     padding: 0 15px 5px 15px;
     font-weight: 400;
@@ -275,7 +275,7 @@ button {
 }
 
 .previa-titulo {
-    font-size: 1em;
+    font-size: 0.9em;
     line-height: 1.4em;
     overflow: hidden;
     white-space: normal;
@@ -313,7 +313,9 @@ button {
     display: flex;
     /* flex-direction: column; */
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    /* align-content: center; */
+    /* align-items: center; */
     width: 100%;
     height: 100vh;
     margin-bottom: 50px;
@@ -325,9 +327,9 @@ button {
 
 .container-deporte {
     width: 50%;
-    max-width: 160px;
-    height: 150px;
-    /* margin: 0.3em; */
+    max-width: 130px;
+    height: 130px;
+    margin: 0.3em;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -360,7 +362,7 @@ button {
 
 .deporte-card h2 {
     padding: 0.4em 0;
-    font-size: 1em;
+    font-size: 0.9em;
     color: #FFFFFF;
 }
 
@@ -368,63 +370,63 @@ button {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0.70)), url(../imagenes/deportes/dep-fem-futsal.jpg);
-            background-position:center;
+    background-position: center;
 }
 
 .cd-fem-02 {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1),
             rgba(0, 0, 0, 0.70)), url(../imagenes/deportes/dep-fem-volley.jpg);
-            background-position:center;
+    background-position: center;
 }
 
 .cd-fem-03 {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0.70)), url(../imagenes/deportes/dep-fem-natacion.jpg);
-            background-position:center;
+    background-position: center;
 }
 
 .cd-fem-04 {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0.70)), url(../imagenes/deportes/dep-fem-handball.jpg);
-            background-position:center;
+    background-position: center;
 }
 
 .cd-mas-01 {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0.70)), url(../imagenes/deportes/dep-masc-futsal.jpg);
-            background-position:center;
+    background-position: center;
 }
 
 .cd-mas-02 {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0.70)), url(../imagenes/deportes/dep-masc-volley.jpg);
-            background-position:center;
+    background-position: center;
 }
 
 .cd-mas-03 {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0.70)), url(../imagenes/deportes/dep-masc-natacion.jpg);
-            background-position:center;
+    background-position: center;
 }
 
 .cd-mas-04 {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0.70)), url(../imagenes/deportes/dep-masc-handball.jpg);
-            background-position:center;
+    background-position: center;
 }
 
 
 
 /* Tab comunidad */
 
-.evento-destacado{
+.evento-destacado {
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -435,18 +437,20 @@ button {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.30),
             rgba(0, 0, 0, 0.70)), url(../imagenes/eventos/evento-club.jpg);
-            background-position:center;
+    background-position: center;
     border-radius: 15px;
 }
 
-.evento-destacado button{
+.evento-destacado button {
     width: 120px;
     color: #fff;
+    height: 35px;
+    font-size: 0.8em;
 }
 
-.evento-destacado p{
+.evento-destacado p {
     color: #FFFFFF;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 .content-eventos {
@@ -502,19 +506,11 @@ button {
     color: #fff;
     background-color: #EF6060;
     padding: 0.3em;
-    width: 45%;
+    width: 55%;
     text-align: center;
     border-radius: 10px;
 }
 
-.previa-titulo {
-    font-size: 1em;
-    line-height: 1.4em;
-    overflow: hidden;
-    white-space: normal;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-}
 
 .previa-fecha {
     font-size: 12px;
@@ -555,7 +551,7 @@ button {
             rgba(0, 0, 0, 0));
     display: flex;
     justify-content: space-between;
-    background-position:center;
+    background-position: center;
 }
 
 .noticia-volver {
@@ -627,7 +623,7 @@ rgba(0, 0, 0, 0.70)), url(../imagenes/fotonoticia1.png);} */
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0.50),
             rgba(0, 0, 0, 0));
-            
+
 }
 
 .evento-volver {
@@ -651,7 +647,7 @@ rgba(0, 0, 0, 0.70)), url(../imagenes/fotonoticia1.png);} */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-size: cover ;
+    background-size: cover;
     color: white;
 }
 
@@ -659,7 +655,7 @@ rgba(0, 0, 0, 0.70)), url(../imagenes/fotonoticia1.png);} */
     padding: 1.2em;
 }
 
-.evento-info{
+.evento-info {
     width: 100%;
     height: 130px;
     display: flex;
@@ -667,20 +663,24 @@ rgba(0, 0, 0, 0.70)), url(../imagenes/fotonoticia1.png);} */
     justify-content: space-around;
     margin-bottom: 1em;
 }
-.evento-local, .evento-precio{
+
+.evento-local,
+.evento-precio {
     font-size: 15px;
     display: flex;
     align-content: center;
     align-items: center;
 }
 
-.evento-local img, .evento-precio img {
+.evento-local img,
+.evento-precio img {
     width: 1.2em;
 }
 
 .evento-fecha {
     font-size: 15px;
 }
+
 .evento-titulo {
     font-size: 22px;
     line-height: 28px;
@@ -701,7 +701,7 @@ rgba(0, 0, 0, 0.70)), url(../imagenes/fotonoticia1.png);} */
 
 
 
-.form-container{
+.form-container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -711,23 +711,23 @@ rgba(0, 0, 0, 0.70)), url(../imagenes/fotonoticia1.png);} */
     justify-content: space-around;
     background-image: linear-gradient(to bottom, rgba(30, 50, 60, 0.30), rgba(30, 50, 60, 1)), url(../imagenes/slider/sede-del-club.png);
     background-size: cover;
-    background-position:center;
+    background-position: center;
 }
 
-.form-container img{
+.form-container img {
     width: 100px;
 }
 
-form{
+form {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 
-form input{
+form input {
     width: 70%;
     height: 50px;
     padding: 0 1.5em;
@@ -737,13 +737,13 @@ form input{
     font-size: 0.8em;
 }
 
-.submit{
+.submit {
     font-size: 1em;
 }
 
 /* INFO CLUB */
 
-.info-container{
+.info-container {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -759,12 +759,12 @@ form input{
     transition: all 0.5s ease;
 }
 
-.activeInfo{
+.activeInfo {
     opacity: 1;
     pointer-events: all;
 }
 
-.info-container img{
+.info-container img {
     width: 100%;
 }
 
@@ -775,15 +775,247 @@ form input{
     text-align: center;
 }
 
-.info-container p{
+.info-container p {
     width: 80%;
-    color: #FFFFFF; 
+    color: #FFFFFF;
     font-size: 0.8em;
     line-height: 1.5em;
 }
 
-.info-container button{
-    color: #FFFFFF; 
+.info-container button {
+    color: #FFFFFF;
     font-size: 0.8em;
     line-height: 1.5em;
+}
+
+/* contenido desportes */
+.deporte-header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    color: white;
+}
+
+
+.container-resultado {
+    width: 100%;
+    max-height: 130vh;
+    /* background-color: #1F2F3C; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.cd-res-01 {
+    background-image:
+        url(../imagenes/deportes/dep-masc-futsal.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.resultado-destacado {
+    background-image: url(../imagenes/deportes/background-estadio.jpeg);
+    width: 80%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.club-izq,
+.club-der {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 145px;
+    width: auto;
+    justify-content: space-around;
+    width: 33%;
+
+}
+
+.club-izq p,
+.club-der p {
+    color: white;
+    width: 50px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.club-izq img,
+.club-der img {
+    width: 70%;
+}
+
+.datos-centrales {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.datos-centrales>h6 {
+    background-color: #EF6060;
+    padding: 5px;
+    border-radius: 9px;
+}
+
+
+.partido-1 {
+    display: flex;
+    width: 80%;
+    align-content: stretch;
+    border: none;
+    padding: 1em;
+}
+
+.equipo-izq,
+.equipo-der {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 33%;
+}
+
+.equipo-izq img,
+.equipo-der img {
+    width: 30%;
+}
+
+.equipo-izq>h5,
+.equipo-der>h5 {
+    text-align: left;
+}
+
+.proximos-resultados {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 33%;
+}
+
+.proximos-resultados h5, .proximos-resultados h4{
+    font-size: 0.6em;
+
+}
+
+.proximos-partidos {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0 15px 0;
+}
+
+
+
+.resultado-contenido {
+    width: 90%;
+    margin: 15px 5%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.resultado-contenido p {
+    font-size: 0.9em;
+    line-height: 1.3em;
+}
+
+.resultado-contenido button {
+    color: #FFFFFF;
+}
+
+.tabla-container {
+    margin-top: 0px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+    margin:0  10%;
+}
+
+.titulo-torneo-apertura {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-torneo-copa {
+    display: flex;
+    justify-content: center;
+
+}
+
+.fila {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+    text-align: center;
+    border: 0.01em #fff solid;
+}
+
+.fila p{
+    text-align: center;
+}
+
+.fila-equipo {
+    background-color: #d8e2e2;
+}
+
+.fila-equipo2 {
+    background-color: #c9cece;
+}
+
+.nombre-equipo{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    align-content: center;
+    align-items: center;
+}
+
+.nombre-equipo img{
+    width: 20%;
+}
+
+.nombre-equipo p{
+ font-size: 0.8em;
+ margin:  5px 0 0 5px;
+ text-align: left;
+}
+
+.index-equipos{
+    width: 40%;
+    text-align: center;
+
+}
+
+.index-pontos{
+    width: 20%;
+    text-align: center; 
 }
